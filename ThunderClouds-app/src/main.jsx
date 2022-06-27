@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { FirstApp } from "./FirstApp";
-import { LoveApp } from "./LoveApp";
+//import { LoveApp } from "./LoveApp";
 
 //ReactDOM.createRoot(document.getElementById("root")).render(
 //<React.StrictMode>
