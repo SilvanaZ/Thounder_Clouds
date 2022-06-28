@@ -14,14 +14,14 @@ export const FirstApp2 = () => {
   );
 }; */
 
-export const FirstApp = (props) => {
-  console.log(props);
+export const FirstApp = ({ title, subTitle /*= "Hola mondo"*/ }) => {
+  //console.log(props);
 
   return (
     <>
-      <h1>{props.title}</h1>
+      <h1>{title}</h1>
       {/*<code>{JSON.stringify(newMessage)}</code>*/}
-      <p>Hey!! Soy un subtitulo chipitense!!</p>
+      <p>{subTitle}</p>
     </>
   );
 };
