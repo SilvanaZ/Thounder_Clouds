@@ -1,18 +1,4 @@
-//import { Fragment } from "react";
-
-/* const getSaludo = {
-  message: 10 / 3,
-  title: "Chipi",
-};
-export const FirstApp2 = () => {
-  return (
-    <>
-      <h1>Hola yo doy {getSaludo.message}</h1>
-      {<code>{JSON.stringify(newMessage)}</code>}
-      <p>Hey!! Soy un subtitulo con un {getSaludo.title}</p>
-    </>
-  );
-}; */
+import PropTypes from "prop-types";
 
 export const FirstApp = ({ title, subTitle /*= "Hola mondo"*/ }) => {
   //console.log(props);
@@ -24,4 +10,9 @@ export const FirstApp = ({ title, subTitle /*= "Hola mondo"*/ }) => {
       <p>{subTitle}</p>
     </>
   );
+};
+
+FirstApp.propTypes = {
+  title: PropTypes.string.isRequired,
+  subTitle: PropTypes.number,
 };
