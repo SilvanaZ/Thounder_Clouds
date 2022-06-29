@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-export const FirstApp = ({ title, subTitle /*= "Hola mondo"*/ }) => {
+export const FirstApp = ({ title, subTitle }) => {
   //console.log(props);
 
   return (
@@ -16,3 +16,7 @@ FirstApp.propTypes = {
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.number,
 };
+
+FirstApp.defaultProps ={
+  
+}
