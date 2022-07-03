@@ -1,24 +1,26 @@
 html,
 body {
-  background-color: rgb(163, 4, 163);
-  color: aliceblue;
+  background-color: black;
+  color: lightpink;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 1.3rem;
   padding: 70px;
+  text-align: center;
 }
 
 button {
-  background-color: #4caf50; /* Green */
+  background-color: rgb(236, 91, 236); /* Lightpurple */
+  color: purple;
   font-size: 1.3rem;
   border-radius: 12px;
-  border: 2px solid #1d7420;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+  border: 2px solid purple;
+  -webkit-transition-duration: 0.8s; /* Safari */
+  transition-duration: 0.8s;
 }
 
 button:hover {
-  background-color: #4caf50; /* Green */
-  color: white;
-  border: 2px solid white;
+  background-color: purple; /* Lightpurple */
+  color: rgb(236, 91, 236);
+  border: 2px solid rgb(236, 91, 236);
 }
