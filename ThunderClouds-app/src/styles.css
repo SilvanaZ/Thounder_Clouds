@@ -10,17 +10,32 @@ body {
 }
 
 button {
-  background-color: rgb(236, 91, 236); /* Lightpurple */
-  color: purple;
-  font-size: 1.3rem;
-  border-radius: 12px;
-  border: 2px solid purple;
-  -webkit-transition-duration: 0.8s; /* Safari */
-  transition-duration: 0.8s;
+  width: 9em;
+  height: 3em;
+  border-radius: 30em;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 6px 6px 12px #292828, -6px -6px 12px #222222;
 }
 
-button:hover {
-  background-color: purple; /* Lightpurple */
-  color: rgb(236, 91, 236);
-  border: 2px solid rgb(236, 91, 236);
+button::before {
+  content: "";
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #5841d8 0%, #cf47f9 100%);
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 9em;
 }
