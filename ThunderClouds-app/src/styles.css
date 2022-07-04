@@ -10,33 +10,40 @@ body {
 }
 
 button {
-  width: 9em;
-  height: 3em;
-  border-radius: 30em;
-  font-size: 20px;
-  font-family: inherit;
+  background: linear-gradient(-45deg, #d46dee, #9f69fe, #6922ac, #d46dee);
+  background-size: 800% 400%;
+  padding: 1em 2em;
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
   border: none;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  box-shadow: 6px 6px 12px #292828, -6px -6px 12px #222222;
-  margin-top: 5px;
+  border-radius: 1rem;
+  font-size: 1, 3rem;
+  font-weight: 700;
+  color: rgb(141, 17, 141);
+  transition: all 0.8s ease-in-out;
 }
 
-button::before {
-  content: "";
-  width: 0;
-  height: 3em;
-  border-radius: 30em;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: linear-gradient(to right, #5841d8 0%, #cf47f9 100%);
-  transition: 0.5s ease;
-  display: block;
-  z-index: -1;
+button:hover {
+  animation: gradient 8s infinite;
+  transform: scale(1.05);
 }
 
-button:hover::before {
-  width: 9em;
+button:active {
+  animation: gradient 8s infinite;
+  transform: scale(0.8);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
