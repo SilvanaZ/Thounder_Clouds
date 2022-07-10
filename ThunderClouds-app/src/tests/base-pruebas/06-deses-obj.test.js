@@ -3,13 +3,13 @@ import { usContext } from '../../base-pruebas/06-deses-obj';
 
 describe('Pruebas en 06-deses-obj', () => {
     test('usContext deberia retornar un array', () => {
-        const testClave = {
-            nombreClave: clave,
+        const test1 = {
+            nombre: clave,
             anios: edad,
         }
 
-        const claves = usContext();
+        const test2 = usContext();
 
-        expect(testClave).toEqual(claves)
+        expect(test1).toEqual(test2)
     });
 });

@@ -1,8 +1,8 @@
 
-export const usContext = ({ clave, nombre, edad, rango = 'Capitán' }) => {
+export const usContext = ({ nombre, anios }) => {
 
     return {
-        nombreClave: clave,
+        nombre: clave,
         anios: edad,
         latlng: {
             lat: 14.1232,
