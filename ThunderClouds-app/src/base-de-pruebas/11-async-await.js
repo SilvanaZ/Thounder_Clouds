@@ -1,5 +1,4 @@
 
-
 export const getImagen = async () => {
 
     try {
@@ -13,7 +12,7 @@ export const getImagen = async () => {
         return url;
 
     } catch (error) {
-        console.error(error);
+        console.log(error);
         return 'No se encontro la imagen'
     }
 
@@ -21,7 +20,6 @@ export const getImagen = async () => {
 
 }
 
-getImagen();
 
 
 
