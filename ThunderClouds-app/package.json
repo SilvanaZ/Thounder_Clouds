@@ -6,13 +6,13 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll, --detectOpenHandles"
   },
   "dependencies": {
     "@babel/preset-env": "^7.18.6",
     "prop-type": "^0.0.1",
     "prop-types": "^15.8.1",
-    "react": "^18.0.0",
+    "react": "^18.2.0",
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
