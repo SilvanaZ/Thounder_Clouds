@@ -1,5 +1,6 @@
 html,
-body {
+p,
+h1 body {
   background-color: black;
   color: lightpink;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",

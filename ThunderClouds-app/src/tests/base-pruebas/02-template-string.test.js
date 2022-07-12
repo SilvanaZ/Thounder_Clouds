@@ -1,4 +1,4 @@
-import { getSaludo } from "../../base-pruebas/02-template-string";
+import { getSaludo } from "../../base-de-pruebas/02-template-string";
 
 describe('Prueba en 02-template-string', () => {
     test('getSaludo debe de retornar "Hola Ro"', () => {

@@ -1,20 +1,14 @@
-/* Una biblioteca que le permite validar los accesorios que se pasan a su componente. */
 import PropTypes from "prop-types";
 
-/**
- * FirstApp es una función que toma un objeto con tres propiedades (título, subtítulo, nombre) y
- * devuelve un componente React que muestra los valores de esas propiedades
- * returns JSX
- */
 export const FirstApp = ({ title, subTitle, name }) => {
   //console.log(props);
 
   return (
     <>
-      <h1>{title}</h1>
+      <h1>{name}</h1>
       {/*<code>{JSON.stringify(newMessage)}</code>*/}
+      <p>{title}</p>
       <p>{subTitle}</p>
-      <p>{name}</p>
     </>
   );
 };
@@ -29,5 +23,5 @@ FirstApp.propTypes = {
 FirstApp.defaultProps = {
   name: "Rocío Fernandez",
   subTitle: "No hay subtitulos",
-  title: "No hay titulo",
+  //title: "No hay titulo",
 };

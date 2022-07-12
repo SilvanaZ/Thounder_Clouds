@@ -1,4 +1,4 @@
-import { getUser, getUsuarioActivo } from "../../base-pruebas/05-funciones";
+import { getUser, getUsuarioActivo } from "../../base-de-pruebas/05-funciones";
 
 describe('Pruebas en 05-funciones', () => {
 

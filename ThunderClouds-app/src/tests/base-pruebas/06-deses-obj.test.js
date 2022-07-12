@@ -1,4 +1,4 @@
-import { usContext } from '../../base-pruebas/06-deses-obj';
+import { usContext } from '../../base-de-pruebas/06-deses-obj';
 
 
 describe('Pruebas en 06-deses-obj', () => {

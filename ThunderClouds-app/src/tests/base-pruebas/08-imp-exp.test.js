@@ -1,4 +1,4 @@
-import { getHeroeById, getHeroesByOwner } from "../../base-pruebas/08-imp-exp";
+import { getHeroeById, getHeroesByOwner } from "../../base-de-pruebas/08-imp-exp";
 
 describe("Pruebas en 08-imp-exp", () => {
 
@@ -6,7 +6,7 @@ describe("Pruebas en 08-imp-exp", () => {
 
         const id = 1;
         const heroe = getHeroeById(id);
-        console.log(heroe);
+        //console.log(heroe);
     });
     test('getHeroeById debe retornae undefined si no existe', () => {
         const id = 100;
