@@ -1,9 +1,10 @@
-import { render, screen } from '@testing-library/react'
+import { getAllByText, render, screen } from '@testing-library/react'
 import { FirstApp } from "../FirstApp";
 
-describe('Pruebas en <FirstApp/>', () => {
+describe('Pruebas en <FirstApp2/>', () => {
 
     const title = 'Hola, soy Pelufo';
+    const subTitle = 'Ac la manosera, escribiendo el subtitulo';
 
     test('it must make mach with the snapshot', () => {
 
@@ -24,7 +25,13 @@ describe('Pruebas en <FirstApp/>', () => {
     });
     test('debe mostrar subtitulo enviado por props', () => {
 
-        render(<FirstApp title={title} />);
+        render(<FirstApp
+            title={title}
+            subTitle={subTitle}
+
+        />
+        );
+        expect(screen.getAllByText(subTitle).length).toBe(2);
 
     });
 
