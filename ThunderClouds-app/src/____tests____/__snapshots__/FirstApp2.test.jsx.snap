@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <FirstApp/> it must make mach with the snapshot 1`] = `
+<div>
+  <h1
+    data-testid="test-title"
+  >
+    Hola, soy Pelufo
+  </h1>
+  <p>
+    Rocío Fernandez
+  </p>
+  <p>
+    No hay subtitulos
+  </p>
+  <p>
+    No hay subtitulos
+  </p>
+</div>
+`;
