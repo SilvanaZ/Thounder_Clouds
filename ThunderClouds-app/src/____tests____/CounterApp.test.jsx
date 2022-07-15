@@ -15,10 +15,26 @@ describe('Pruebas en CounterApp', () => {
 
         //expect(screen.getByRole('heading', { level: 2 }).innerHTML).toContain('100')
     });
-    test('debe de incrementar con el boton +1', () => {
+    test('debe incrementar con el boton +1', () => {
 
         render(<CounterApp value={initialValue} />);
-        //fireEvent.click(screen.getByText('+1'))
+        fireEvent.click(screen.getByText('+1'));
         expect(screen.getByText('11')).toBeTruthy();
-    })
+    });
+    test('debe decrementar con el boton -1', () => {
+
+        render(<CounterApp value={initialValue} />);
+        fireEvent.click(screen.getByText('-1'));
+        expect(screen.getByText('9')).toBeTruthy();
+    });
+    test('debe reiniciar conteo con el boton reset', () => {
+
+        render(<CounterApp value={365} />);
+        fireEvent.click(screen.getByText('+1'));
+        fireEvent.click(screen.getByText('+1'));
+        fireEvent.click(screen.getByText('+1'));
+        fireEvent.click(screen.getByText('Reset'));
+
+        expect(screen.getByText(365)).toBeTruthy();
+    });
 });

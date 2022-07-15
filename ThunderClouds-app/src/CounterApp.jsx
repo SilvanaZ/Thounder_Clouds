@@ -6,11 +6,11 @@ export const CounterApp = ({ value }) => {
 
   const handleAdd = () => {
     // console.log(event);
-    // setCounter (counter + 2);
-    setCounter((c) => c + 2);
+    // setCounter (counter + 1);
+    setCounter((c) => c + 1);
   };
 
-  const handleDecrease = () => setCounter(counter - 2);
+  const handleDecrease = () => setCounter(counter - 1);
 
   const handleReset = () => setCounter(value);
 
