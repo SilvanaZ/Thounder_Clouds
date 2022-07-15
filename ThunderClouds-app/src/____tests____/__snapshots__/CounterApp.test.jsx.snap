@@ -11,10 +11,10 @@ exports[`Pruebas en CounterApp tiene que coincidir con el snapshot 1`] = `
      
   </h2>
   <button>
-    + 2
+    +1
   </button>
   <button>
-    - 2
+    -1
   </button>
   <button>
     Reset
