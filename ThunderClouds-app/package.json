@@ -27,7 +27,7 @@
     "babel-jest": "^28.1.2",
     "jest": "^28.1.2",
     "jest-environment-jsdom": "^28.1.2",
-    "vite": "^2.9.9",
+    "vite": "^2.9.16",
     "whatwg-fetch": "^3.6.2"
   }
 }
